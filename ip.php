@@ -3,7 +3,7 @@
 use React\Dns\Config\Config;
 use React\Dns\Resolver\Factory;
 
-require __DIR__ . '../php/reactphp/vendor/autoload.php';
+require __DIR__ . '../../php/reactphp/vendor/autoload.php';
 
 //#if (!empty($argv[1])) {
 //#  parse_str($argv[1], $_GET);
