@@ -4,7 +4,7 @@ use React\Dns\Config\Config;
 use React\Dns\Resolver\Factory;
 use React\Dns\Model\Message;
 
-require __DIR__ . '/reactphp/vendor/autoload.php';
+require __DIR__ . '../php/reactphp/vendor/autoload.php';
 
 $config = Config::loadSystemConfigBlocking();
 if (!$config->nameservers) {
