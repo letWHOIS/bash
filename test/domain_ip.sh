@@ -1,0 +1,1 @@
+whois | ./ip.sh softreck.com

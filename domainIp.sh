@@ -12,7 +12,7 @@ DOMAIN=$1
 [ -z "$DOMAIN" ] && echo "DOMAIN NAME is empty" && exit
 
 # START
-DOMAIN=$(php ip.php $DOMAIN)
+DOMAIN=$(php domainIp.php $DOMAIN)
 echo $DOMAIN
 exit
 
