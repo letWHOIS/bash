@@ -14,6 +14,7 @@ IP=$1
 IP=$(php ip.php $IP)
 echo $IP
 exit
+
 [ -t 0 ] && echo "stdin HTML Content is empty (cat index.html | ./tag.sh title)" && exit
 IFS='' read -d '' -r HTML
 [ -z "$1" ] && echo "HTML TAG is empty, (e.g.: title, body, header)" && exit

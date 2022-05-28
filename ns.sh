@@ -12,7 +12,7 @@ DOMAIN=$1
 [ -z "$DOMAIN" ] && echo "DOMAIN NAME is empty" && exit
 
 # START
-NS=$(php ./reactphp/ns.php $DOMAIN)
+NS=$(php ns.php $DOMAIN)
 echo $NS
 
 exit
