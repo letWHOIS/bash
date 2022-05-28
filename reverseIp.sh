@@ -5,11 +5,11 @@
 ## Created Date: 26.05.2022
 
 ## EXAMPLE
-# ./ns.sh softreck.com
+# ./reverseIp.sh 108.174.10.10
 
 # CONFIG
-DOMAIN=$1
-[ -z "$DOMAIN" ] && echo "DOMAIN NAME is empty" && exit
+IP=$1
+[ -z "$IP" ] && echo "DOMAIN NAME is empty" && exit
 
 # START
 REGISTER=$(php reverseIp.php $IP)

@@ -5,14 +5,15 @@
 
 ## EXAMPLE
 # ./ip.sh 8.8.8.8
+# ./ip.sh 108.174.10.10
 
 # CONFIG
-IP=$1
-[ -z "$IP" ] && echo "IP is empty" && exit
+DOMAIN=$1
+[ -z "$DOMAIN" ] && echo "DOMAIN NAME is empty" && exit
 
 # START
-IP=$(php ip.php $IP)
-echo $IP
+DOMAIN=$(php ip.php $DOMAIN)
+echo $DOMAIN
 exit
 
 [ -t 0 ] && echo "stdin HTML Content is empty (cat index.html | ./tag.sh title)" && exit
