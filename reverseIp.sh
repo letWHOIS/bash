@@ -6,12 +6,15 @@
 
 ## EXAMPLE
 # ./reverseIp.sh 108.174.10.10
+# echo "108.174.10.10" | ./reverseIp.sh
 
 # CONFIG
-IP=$1
-[ -z "$IP" ] && echo "DOMAIN NAME is empty" && exit
+IP=
+[ ! -t 0 ] && IFS='' read -d '' -r IP
+[ ! -z "$1" ] && IP=$1
+[ -z "$IP" ] && echo "IP is empty" && exit
 
 # START
-REGISTER=$(php reverseIp.php $IP)
-REGISTER=${REGISTER//,/$'\n'}
-echo $REGISTER
+REVERSE_IP=$(php reverseIp.php $IP)
+REVERSE_IP=${REVERSE_IP//,/$'\n'}
+echo $REVERSE_IP
