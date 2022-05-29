@@ -1,4 +1,4 @@
-# !/bin/bash
+#!/bin/bash
 
 # CONTRIBUTION
 ## Author: Tom Sapletta
