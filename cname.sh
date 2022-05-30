@@ -18,5 +18,5 @@ DOMAIN=
 [ -z "$DOMAIN" ] && echo "DOMAIN NAME is empty" && exit
 
 # START
-IP=$(php ./letwhois/domainIp.php $DOMAIN)
+IP=$(php ./letwhois/cname.php $DOMAIN)
 echo $IP

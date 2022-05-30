@@ -15,5 +15,5 @@ DOMAIN=
 [ -z "$DOMAIN" ] && echo "DOMAIN NAME is empty" && exit
 
 # START
-NS=$(php ns.php $DOMAIN)
+NS=$(php ./letwhois/ns.php $DOMAIN)
 echo $NS

@@ -15,6 +15,6 @@ IP=
 [ -z "$IP" ] && echo "IP is empty" && exit
 
 # START
-REVERSE_IP=$(php reverseIp.php $IP)
+REVERSE_IP=$(php ./letwhois/reverseIp.php $IP)
 REVERSE_IP=${REVERSE_IP//,/$'\n'}
 echo $REVERSE_IP
