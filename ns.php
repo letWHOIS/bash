@@ -5,7 +5,7 @@ use React\Dns\Query\Query;
 use React\Dns\Query\UdpTransportExecutor;
 use React\EventLoop\Factory;
 
-require __DIR__ . '/reactphp/vendor/autoload.php';
+require __DIR__ . '/../reactphp/vendor/autoload.php';
 
 $executor = new UdpTransportExecutor('8.8.8.8:53');
 

@@ -8,7 +8,7 @@ use React\Dns\Config\Config;
 //use React\Dns\Resolver\Factory;
 
 
-require __DIR__ . '../php/reactphp/vendor/autoload.php';
+require __DIR__ . '/../reactphp/vendor/autoload.php';
 
 $executor = new UdpTransportExecutor('8.8.8.8:53');
 
