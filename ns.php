@@ -15,6 +15,7 @@ $separator = isset($argv[2]) ? $argv[2] : ' ';
 $ipv4Query = new Query($name, Message::TYPE_NS, Message::CLASS_IN);
 
 $executor->query($ipv4Query)->then(function (Message $message) {
+    global $separator;
     foreach ($message->answers as $answer) {
         //echo 'NS: ' . $answer->data . PHP_EOL;
         echo '' . $answer->data . $separator;
