@@ -1,1 +1,2 @@
 https://github.com/reactphp/dns.git reactphp
+https://github.com/letwhois/bash letwhois
