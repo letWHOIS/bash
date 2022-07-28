@@ -16,4 +16,4 @@ DOMAIN=
 
 # START
 NS=$(php ./letwhois/ns.php $DOMAIN)
-echo $NS
+echo -n "$NS"
