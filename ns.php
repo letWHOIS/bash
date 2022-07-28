@@ -10,14 +10,14 @@ require __DIR__ . '/../reactphp/vendor/autoload.php';
 $executor = new UdpTransportExecutor('8.8.8.8:53');
 
 $name = isset($argv[1]) ? $argv[1] : 'www.google.com';
+$separator = isset($argv[2]) ? $argv[2] : ' ';
 
 $ipv4Query = new Query($name, Message::TYPE_NS, Message::CLASS_IN);
 
 $executor->query($ipv4Query)->then(function (Message $message) {
     foreach ($message->answers as $answer) {
         //echo 'NS: ' . $answer->data . PHP_EOL;
-        echo '' . $answer->data;
-         //. PHP_EOL;
+        echo '' . $answer->data . $separator;
     }
 }, 'printf');
 
